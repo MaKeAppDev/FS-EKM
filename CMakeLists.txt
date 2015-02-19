@@ -16,6 +16,7 @@ set(CHAPTERS
     chapters/wechselfeld.tex
     chapters/synchronmaschine.tex
     chapters/asynchronmaschine.tex
+    chapters/universalmaschine.tex
 )
 
 set(DRAWINGS
@@ -37,6 +38,9 @@ set(DRAWINGS
 	drawings/asynchronmaschine/zeiger_asyn_stromortskurve_i.tex
 	drawings/asynchronmaschine/zeiger_asyn_stromortskurve_p.tex
 	drawings/asynchronmaschine/zeiger_asyn_stromortskurve_s.tex
+    drawings/universalmaschine/esb_uvm.tex
+    drawings/universalmaschine/zeiger_uvm_stromortskurve.tex
+    drawings/universalmaschine/zeiger_uvm.tex
 )
 
 set(IMAGES

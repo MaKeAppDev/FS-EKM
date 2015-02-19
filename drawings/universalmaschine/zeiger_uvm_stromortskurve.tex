@@ -1,0 +1,25 @@
+%!tikz editor 1.0
+%!tikz source begin
+\begin{tikzpicture} [scale=0.9, >=angle 45, font=\small]
+
+% Koordinatensystem
+\draw [->, thick] (6, 0) -- (-1, 0) node [above] {Im};
+\draw [->, thick] (0, -1) -- (0, 4) node [right] {Re};
+
+\draw [thick, blue, ->] (0,0) -- (0,3) node [left, black] {$\underline U$};
+
+\begin{scope}[shift={(2.5,0)}]
+	\draw [thick] (-2.5,0) arc (180:0:2.5);
+	\draw [thick, red, ->] (-2.5,0) -- (140:2.5) node [right, black] {$\underline I_N$};
+	\draw [thick, red, ->] (-2.5,0) -- (40:2.5) node [right, black] {$\underline I_\text{An}$};
+	\draw [thick, red, ->] (-2.5,0) -- (0:2.5) node [below, black] {$\underline I_\text{max}$};
+	
+	\draw [thick, ->, >=stealth] (80:2.8) arc (80:100:2.8);
+	\draw (90:2.8) node [above] {$n$};
+	
+\end{scope}
+
+\draw [thick, ->, >=stealth] (70:1) arc (70:90:1) node [left] {$\varphi_N$};
+
+\end{tikzpicture}
+%!tikz source end

@@ -1,0 +1,33 @@
+%!tikz editor 1.0
+%!tikz source begin
+\begin{tikzpicture} [>=angle 45, font=\small]
+
+% Koordinatensystem
+\draw [->, thick] (1.5, 0) -- (-2, 0) node [left] {Im};
+\draw [->, thick] (0, -0.5) -- (0, 4) node [above] {Re};
+
+% Zeiger
+\coordinate (U) at (0,3.5);
+\coordinate (I) at (60:1.5);
+\coordinate (X) at ($(150:2)!(U)!(0,0)$);
+
+\draw [->, very thick, blue] (0, 0) -- (U);
+\draw [->, very thick, green!70!blue] (0, 0) -- (X);
+\draw [->, very thick, red] (0,0) -- (I);
+\draw [->, very thick, green!70!blue] (X) -- ++(60:0.9);
+\draw [->, very thick, blue] (X) ++(60:0.9) -- (U);
+
+% % Winkel
+ \draw [<-, thick, >=stealth] (0, 0.8) arc (90:60:0.8);
+
+% Beschriftung
+\draw (U) node [right] {$\underline U$};
+\draw (I) node [right] {$\underline I$};
+\draw (X) ++(0.2,-0.3) node [below] {$jX_\text{ges}\,\underline I$};
+\draw (X) ++(-0.5,0) node [above] {$R_\text{ges}\,\underline I$};
+\draw (U) ++(-0.4,-0.7) node [left] {$\underline U_i$};
+\draw (0.25,1) node {$\varphi$};
+
+
+\end{tikzpicture}
+%!tikz source end

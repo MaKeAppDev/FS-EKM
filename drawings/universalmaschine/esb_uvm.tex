@@ -1,0 +1,10 @@
+\begin{circuitikz}[scale=.75, transform shape, american currents] 
+\draw	(0,2) to [R=$R_1$, o-](2,2)
+			to [L=$jX_1$](4,2)
+			to [R=$R_2$](6,2)
+			to [L=$jX_2$](8,2)
+			to [I_=$U_i$](8,0)
+			to [short, -o](0,0);
+
+\draw[->, >=latex] (0,1.8) -- (0,0.2) node [pos=0.5, left] {$\underline U$};		
+\end{circuitikz}
