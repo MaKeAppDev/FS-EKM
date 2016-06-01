@@ -1,20 +1,17 @@
 \section{Universalmotor}
-\sectionbox{
+\begin{sectionbox}
 \subsection{Größen}
-\tablebox{
-\begin{tabular*}{\columnwidth}{p{4,5cm}cc}
-\ctrule
+\begin{tablebox}{p{4,5cm}cc}
 Drehmoment zeitinvarianter Anteil & $M_D$ & $\unitof{\si{\newtonmeter}}$\\
 Pendelmoment (doppelte Speisefrequenz) & $m_p$ & $\unitof{\si{\newtonmeter}}$\\
 Phasenverschiebungswinkel Strom & $\varphi_I$ & $\unitof{\si{\radian}}$\\
-\cbrule
-\end{tabular*}
-}
+\end{tablebox}
 
 \subsection{ESB}
 \input{drawings/universalmaschine/esb_uvm}
-}
-\sectionbox{
+\end{sectionbox}
+
+\begin{sectionbox}
 \subsection{Systemgleichungen}
 Vergleiche Systemgleichungen Gleichstrom-Reihenschlussmotor\\
 \begin{align*}
@@ -24,34 +21,38 @@ m_D &= k_M\cdot\Phi_\delta\cdot i\\
 i &= \sqrt{2}\cdot I\cdot\cos(\omega_1 t + \varphi_I)\\
 \underline{U}_i &= \frac{n}{n_\text{syn}}\cdot k_U'\cdot\underline{I}
 \end{align*}
-}
-\sectionbox{
+\end{sectionbox}
+
+\begin{sectionbox}
 \subsection{Drehmoment}
 \[m_D(t) = M_D + m_p(t) = k_M\, k_\Phi\cdot I^2\cdot (\underbrace{1}_{M_D} + \underbrace{\cos{(2\omega t + 2\varphi_I)}}_{m_p})\]
 
 \subsubsection{Drehmoment-Drehzahl-Gleichung}
-\emphbox{
+\begin{emphbox}
 \[M_D = k_M\, k_\Phi\cdot \frac{(U_1-2\cdot U_B)^2}{\left(R_\text{ges} + k_U'\cdot\frac{n}{n_\text{syn}}\right)^2 + {X_\text{ges}}^2}\]
-}
+\end{emphbox}
 Synchrone Drehzahl: $n_\text{syn} = \frac{f}{p}$
-}
-\sectionbox{
+\end{sectionbox}
+
+\begin{sectionbox}
 \subsection{Zeigerdiagramm}
 \begin{center}
 \input{drawings/universalmaschine/zeiger_uvm}
 \end{center}
-}
-\sectionbox{
+\end{sectionbox}
+
+\begin{sectionbox}
 \subsection{Stromortskurve}
 \begin{center}
 \input{drawings/universalmaschine/zeiger_uvm_stromortskurve}
 \end{center}
-}
-\sectionbox{
+\end{sectionbox}
+
+\begin{sectionbox}
 \subsubsection{Strom}
-\emphbox{
+\begin{emphbox}
 \[\underline{I} = \frac{\underline{U}}{\left(\frac{n}{n_\text{syn}}\cdot k_U'\ + R_\text{ges}\right) + jX_\text{ges}}\]
-}
+\end{emphbox}
 Leerlaufstrom:
 \[\underline{I}_0 = \underline{I}(n\rightarrow\infty) = 0\]
 Anlaufstrom:
@@ -59,4 +60,4 @@ Anlaufstrom:
 
 \subsubsection{Phase}
 \[\tan{\varphi} = \frac{X_\text{ges}}{\frac{n}{n_\text{syn}}\cdot k_U' + R_\text{ges}}\]
-}
+\end{sectionbox}
